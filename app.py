@@ -15,5 +15,12 @@ def predict():
     output=round(prediction[0],3)
     return render_template('index.html',prediction_text=f'A house with {rooms} rooms and located {distance} meters from the city center has a value of ${output}')
 
+@app.route("/hello")
+def helloworld():
+    return "<h1>Hello Flask App</h1>"
+
+
+
+
 if __name__  == "__main__":
     app.run()
